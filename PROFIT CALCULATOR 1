@@ -8,14 +8,11 @@ public class Solution {
 
     public static void main(String[] args) {
          Scanner sc = new Scanner(System.in);
-
         int copiesSold = sc.nextInt();
         int costPerCopy = sc.nextInt();
         int costSpentPerCopy = sc.nextInt();
-
         int profitPerCopy = costPerCopy - costSpentPerCopy;
         double totalProfit = (copiesSold * profitPerCopy) - 100;
-
         System.out.println("Number of copies sold:" + copiesSold);
         System.out.println("Cost of each copy:" + costPerCopy);
         System.out.println("Cost spent by agency on each newspaper:" + costSpentPerCopy);
