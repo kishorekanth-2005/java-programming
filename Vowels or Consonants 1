@@ -5,18 +5,17 @@ import java.math.*;
 import java.util.regex.*;
 
 public class Solution {
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         char ch = sc.next().charAt(0);
-        char lowerCh= Character.LowerCase(ch);
-        if(lower=='a' || lower=='e' || lower=='i' || lower=='o' || lower=='u'){
-            System.out.println("The Character " +ch+ " is Vowel ");
-        }
-        else{
-            System.out.println("The Character "+ch+" is Consonant");
-            
+             if (ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U' ||
+                ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+                System.out.println("The Character " + ch + " is Vowel");
+            } else {
+                System.out.println("The Character " + ch + " is Consonant");
+            }
         }
         
     }
-}
+                     
+    
