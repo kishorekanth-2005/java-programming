@@ -1,3 +1,4 @@
+import java.io.*;
 import java.util.*;
 import java.text.*;
 import java.math.*;
@@ -5,24 +6,19 @@ import java.util.regex.*;
 
 public class Solution {
 
-    public static double calculateGrossSalary(int basicSalary) {
-        double hra, da;
-
-        if (basicSalary < 15000) {
-            hra = 0.15 * basicSalary;
-            da = 0.90 * basicSalary;
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int salary = sc.nextInt();
+        int hra, da;
+         if (salary < 15000) {
+            hra = (15 * salary) / 100;
+            da = (90 * salary) / 100;
         } else {
             hra = 5000;
-            da = 0.98 * basicSalary;
+            da = (98 * salary) / 100;
         }
 
-        return basicSalary + hra + da;
+        System.out.println(salary + hra + da+".00");
     }
+}
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int basicSalary = scanner.nextInt();
-
-        double grossSalary = calculateGrossSalary(basicSalary);
-        System.out.printf("%.2f\n", grossSalary);
-    }
