@@ -9,7 +9,6 @@ public class Solution {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int input = sc.nextInt();
-        
         int temp = input;
         int sum = 0;
         while(temp >0){
