@@ -12,8 +12,6 @@ public class Solution {
         int squareValue = sc.nextInt();
         int baseValue = sc.nextInt();
         int powerValue = sc.nextInt();
-       
-       
         System.out.println((int) Math.floor(floatInput));  
         System.out.println((int) Math.ceil(floatInput));  
         System.out.println((int) Math.sqrt(squareValue));  
