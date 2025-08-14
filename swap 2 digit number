@@ -4,7 +4,28 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-public class Swap {
+public class Solution {
 
     public static void main(String[] args) {
-       
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        int count = 0;
+        int temp = num;
+        while (temp > 0) {
+            temp = temp / 10;
+            count++;
+        }
+        if (count < 2) {
+            System.out.println("STDOUT");
+        } else {
+            int first = 0, second = 0;
+            temp = num;
+            while (temp > 0) {
+                second = first;
+                first = temp % 10;
+                temp = temp / 10;
+            }
+            System.out.println(second + "" + first);
+           }
+    }  
+}
